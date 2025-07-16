@@ -1,0 +1,45 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --btn-color: #008000;
+    --bg-color: #dcdcdc;
+    --bg-color-recipes: #efefef;
+}
+
+button {
+    background-color: var(--btn-color);
+    width: 220px;
+    height: auto;
+    color: white;
+    font-weight: 500;
+    padding: 16px;
+    border-width: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    padding: 32px;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h2 {
+    padding: 24px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h3 {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
