@@ -1,3 +1,32 @@
-.h1{
-    font-size: 23;
+.header-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);    
+}
+
+.nav-menu {
+    padding-bottom: 10px;
+}
+.logo-img {
+    width: 200px;
+}
+
+.navlink {
+    text-decoration: none;
+    margin-left: 16px;
+    color: black
+}
+.navlink:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+    text-decoration-color: #008000;
+    color: #008000;
 }
