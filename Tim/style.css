@@ -6,7 +6,7 @@
     flex-direction: column;
     text-align: center;
     margin: 0;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     background-color: var(--bg-color-recipes);
 }
 
@@ -80,6 +80,12 @@ p {
     }
 }
 
+@media(max-width:400px) {
+    .section-top-recipes h2 {
+        font-size: 16px;
+    }
+}
+
 /*#endregion top-recipes */
 
 /*#region cooking-tip*/
@@ -146,6 +152,12 @@ p {
     .container-cooking-tip {
         flex-direction: column-reverse;
         align-items: center;
+    }
+}
+
+@media(max-width:400px) {
+    .section-cooking-tip h2 {
+        font-size: 16px;
     }
 }
 
