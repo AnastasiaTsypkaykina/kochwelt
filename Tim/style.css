@@ -1,0 +1,152 @@
+/*#region top-recipes*/
+
+.section-top-recipes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 100px;
+    background-color: var(--bg-color-recipes);
+}
+
+.container-top-recipes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top-recipe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 8px;
+    transition: transform 175ms ease-in;
+}
+
+.container-top-recipes img {
+    width: 300px;
+    aspect-ratio: 1/1;
+    display: flex;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.top-recipe:hover {
+    transform: scale(1.1);
+}
+
+p {
+    font-size: 24px;
+}
+
+
+@media(max-width:1100px) {
+
+    .section-top-recipes h2 {
+        font-size: 26px;
+    }
+
+    .container-top-recipes img {
+        width: 250px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:890px) {
+    .section-top-recipes h2 {
+        font-size: 20px;
+    }
+
+    .container-top-recipes img {
+        width: 200px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:680px) {
+    .container-top-recipes {
+        flex-direction: column;
+    }
+
+    .top-recipe {
+        margin-bottom: 30px;
+    }
+}
+
+/*#endregion top-recipes */
+
+/*#region cooking-tip*/
+.section-cooking-tip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-cooking-tip {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-cooking-tip img {
+    width: 300px;
+    aspect-ratio: 1/1;
+    display: flex;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    margin-right: 32px;
+    transition: transform 175ms ease-in;
+}
+
+.container-cooking-tip img:hover {
+    transform: scale(1.1);
+}
+
+.container-cooking-tip p {
+    padding: 8px;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+@media(max-width:1100px) {
+
+    .section-cooking-tip h2 {
+        font-size: 26px;
+    }
+
+    .container-cooking-tip img {
+        width: 250px;
+    }
+}
+
+@media(max-width:890px) {
+
+    .section-cooking-tip h2 {
+        font-size: 20px;
+    }
+
+    .container-cooking-tip img {
+        width: 200px;
+    }
+}
+
+@media(max-width:680px) {
+
+    .container-cooking-tip img {
+        margin: 16px;
+    }
+
+    .container-cooking-tip {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+/*#endregion cooking-tip*/
