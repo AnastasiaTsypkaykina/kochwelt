@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="/standard.css">
     <link rel="stylesheet" href="./fonts/raleway.css">
+    <script src="script.js"></script>
     <title>Kochwelt</title>
 </head>
 
@@ -15,14 +16,20 @@
         <a href="/index.html">
             <img src="/img/logo.png" class="logo-img" alt="logo">
         </a>
-        <nav class="nav-menu">
+        <nav class="d_none" id="menu" onclick="toggleMenu()" >
             <a class="navlink" href="/index.html">Start</a>
             <a class="navlink" href="xx">Rezept des Tages</a>
             <a class="navlink" href="xx">Kontakt</a>
             <a class="navlink" href="xx">Impressum</a>
         </nav>
+
+        <button onclick="toggleMenu()" class="hamburger">
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+        </button>
     </header>
-    
+
 </body>
 
 </html>

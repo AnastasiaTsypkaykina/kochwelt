@@ -8,12 +8,9 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);    
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-.nav-menu {
-    padding-bottom: 10px;
-}
 .logo-img {
     width: 200px;
 }
@@ -21,12 +18,58 @@ header {
 .navlink {
     text-decoration: none;
     margin-left: 16px;
-    color: black
+    color: black;
+    font-size: 16px;
 }
+
 .navlink:hover {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
     text-decoration-color: #008000;
     color: #008000;
+}
+
+.burger_line {
+    height: 20px;
+    background-color: black;
+    width: 32px;
+    display: flex;
+    margin-top: 4px;
+}
+
+.button {
+    border-style: none;
+}
+
+
+
+#menu {
+    margin-bottom: 6px;
+}
+
+
+
+@media (max-width: 1920px) {
+    button {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    #menu {
+        display: none;
+    }
+
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+
 }
