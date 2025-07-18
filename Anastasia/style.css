@@ -30,24 +30,32 @@ header {
     color: #008000;
 }
 
-
-
 .button {
     border-style: none;
 }
 
+.d_none {
+    display: none;
+}
+.menu-vertical {
+    display: none;
+}
 
 
 #menu {
     margin-bottom: 6px;
     display: flex;
 
+
 }
 
 
 
 @media (max-width: 1920px) {
-    button {
+    header button {
+        display: none;
+    }
+    .d_none{
         display: none;
     }
 }
@@ -55,13 +63,8 @@ header {
 @media (max-width: 800px) {
     #menu {
         display: none;
-    }
-    .d_none {
-        display: flex;
-        flex-direction: column;
-    }
 
-
+    }
 
     .hamburger {
         display: flex;
@@ -78,8 +81,9 @@ header {
         display: flex;
         margin-top: 4px;
     }
-
    
+
+
 }
 
 /* Sektion mein Rezept */
@@ -210,32 +214,33 @@ list-ingridients {
 
 /* Footer */
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #efefef;
-  height: 100px;
-  margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efefef;
+    height: 100px;
+    margin-top: 80px;
 
 }
+
 .footer-img {
-  width: 250px;
-  height: auto;
-  margin-left: 100px;
+    width: 250px;
+    height: auto;
+    margin-left: 100px;
 
 }
 
 .social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-right: 100px;
 
 }
 
 .social-icons a img {
-  width: 32px;
-  height: 32px;
-  object-fit: cover;
-  border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
 }

@@ -1,3 +1,3 @@
 function toggleMenu() {
-    document.getElementById('menu').classList.toggle('d_none');
+    document.getElementById('burger-menu').classList.toggle('d_none');
 }
