@@ -271,6 +271,7 @@ footer {
     height: 30px;
     margin-right: 10px;
 }
+
 .footer-links {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -284,7 +285,8 @@ footer {
         align-items: center;
         height: 200px;
     }
-    .separator{
+
+    .separator {
         display: none;
     }
 
@@ -297,7 +299,8 @@ footer {
         margin-right: 0;
         margin-top: 20px;
     }
-    .footer-links{
+
+    .footer-links {
         margin-top: 10px;
     }
 
