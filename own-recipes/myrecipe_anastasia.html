@@ -15,12 +15,18 @@
         <a href="/index.html">
             <img src="/img/logo.png" class="logo-img" alt="logo">
         </a>
-        <nav class="nav-menu">
+        <nav class="d_none" id="menu" onclick="toggleMenu()">
             <a class="navlink" href="/index.html">Start</a>
-            <a class="navlink" href="xx">Rezept des Tages</a>
+            <a class="navlink" href="recipe_anastasia.html">Rezept des Tages</a>
             <a class="navlink" href="xx">Kontakt</a>
             <a class="navlink" href="xx">Impressum</a>
         </nav>
+
+        <button onclick="toggleMenu()" class="hamburger">
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+        </button>
     </header>
 
     <div class="margin-sides">
@@ -49,7 +55,18 @@
                 <button onclick="calcPortions()"> Portionen</button>
             </div>
             <div class="section-data-ingredients">
-                <table>
+                <div class="liste-div">
+
+                    <ul id="ingridients" class="liste-ul" style="list-style-type: none;">
+                        <li class="grey"> 125 g Margarine</li>
+                        <li class="white">125 g Zucker</li>
+                        <li class="grey">3 Eier</li>
+                        <li class="white">1/2 Teelöfel Backpulver</li>
+                        <li class="grey">250 g Mehl</li>
+                        <li class="white">1.5 kg Äpfel</li>
+                    </ul>
+                </div>
+                <!-- <table>
                     <tr class="bg-color-grey">
                         <td>1</td>
                         <td>Salatgurke(n)</td>
@@ -90,7 +107,7 @@
                         <td>nach Bedarf</td>
                         <td>Oregano</td>
                     </tr>
-                </table>
+                </table> -->
             </div>
         </section>
 

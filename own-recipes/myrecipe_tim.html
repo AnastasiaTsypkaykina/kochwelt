@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/standard.css">
+    <title>Kochwelt - Mein Rezept</title>
+</head>
+
+<body>
+
+    <header class="header-container">
+        <a href="/index.html">
+            <img src="/img/logo.png" class="logo-img" alt="logo">
+        </a>
+        <nav class="d_none" id="menu" onclick="toggleMenu()">
+            <a class="navlink" href="/index.html">Start</a>
+            <a class="navlink" href="recipe_anastasia.html">Rezept des Tages</a>
+            <a class="navlink" href="xx">Kontakt</a>
+            <a class="navlink" href="xx">Impressum</a>
+        </nav>
+
+        <button onclick="toggleMenu()" class="hamburger">
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+        </button>
+    </header>
+
+    <div class="margin-sides">
+        <section class="section-recipe-header">
+            <h1>Griechischer Bauernsalat</h1>
+            <div id="image-cover">
+                <img src="/img/salad.jpg" alt="greek salad image">
+            </div>
+            <div class="recipe-header-lower-content">
+                <div class="tag">
+                    <img src="/img/icons/clock-regular.svg" alt="">15 Min.</img>
+                </div>
+                <div class="tag">
+
+                    <img src="/img/icons/brain-solid.svg" alt=""> simpel</img>
+                </div>
+                <div class="tag">
+                    <img src="/img/icons/calendar-alt-regular.svg" alt="">28.09.2020</img>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-recipe-ingredients">
+            <div class="section-recipe-ingredients-pieces">
+                Zutaten für&nbsp;<input id="multiply" type="number">
+                <button onclick="calcPortions()"> Portionen</button>
+            </div>
+            <div class="section-data-ingredients">
+                <div class="liste-div">
+
+                    <ul id="ingridients" class="liste-ul" style="list-style-type: none;">
+                        <li class="grey"> 125 g Margarine</li>
+                        <li class="white">125 g Zucker</li>
+                        <li class="grey">3 Eier</li>
+                        <li class="white">1/2 Teelöfel Backpulver</li>
+                        <li class="grey">250 g Mehl</li>
+                        <li class="white">1.5 kg Äpfel</li>
+                    </ul>
+                </div>
+                <!-- <table>
+                    <tr class="bg-color-grey">
+                        <td>1</td>
+                        <td>Salatgurke(n)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Paprikaschot(n), rot und grün</td>
+                    </tr>
+                    <tr class="bg-color-grey">
+                        <td>500</td>
+                        <td>Tomate(n)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Zwiebel(n)</td>
+                    </tr>
+                    <tr class="bg-color-grey">
+                        <td>200</td>
+                        <td>Schafskäse(n)</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Glas Oliven, schwarze. ca 100g</td>
+                    </tr>
+                    <tr class="bg-color-grey">
+                        <td>etwas</td>
+                        <td>Salz und Pfeffer</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Zitrone(n)</td>
+                    </tr>
+                    <tr class="bg-color-grey">
+                        <td>125</td>
+                        <td>Olivenöl</td>
+                    </tr>
+                    <tr>
+                        <td>nach Bedarf</td>
+                        <td>Oregano</td>
+                    </tr>
+                </table> -->
+            </div>
+        </section>
+
+        <section class="section-cooking">
+            <h2>Zubereitung</h2>
+            <div class="flip-direction">
+
+                <div class="tag">
+                    <img src="/img/icons/clock-regular.svg" alt="">ca. 15 Minuten</img>
+                </div>
+                <div class="tag">
+                    <img src="/img/icons/clock-regular.svg" alt="">Gesamtzeit ca.15 Minuten</img>
+                </div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium recusandae odio itaque praesentium
+                quae. Ad mollitia eos repellat reiciendis voluptatum minus, dolorem, quia, facilis tenetur itaque qui
+                fugit excepturi ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, beatae
+                necessitatibus iste deserunt in earum quidem impedit, facere saepe quia nostrum facilis quam aut! Labore
+                rem maiores quidem recusandae modi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                totam odio corrupti quasi voluptatibus natus esse sit ipsa temporibus fugiat consequatur assumenda vero
+                ipsam quas impedit, perferendis, distinctio expedita eaque.</p>
+            <div class="cooking-creator-frame">
+                <h3>Rezept erstellt von</h3>
+                <div class="cooking-creator">
+                    <img src="/img/profile.png" alt="">
+                    <p>Junus</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer container wrap">
+        <img class="footer-img" src="/img/logo.png" alt="logo">
+        <div class="social-icons">
+            <a target="_blank" href="http://google.de"><img src="/img/icons/facebook_logo.png" class="zoom-img"
+                    alt="facebook"></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="/img/icons/instagrram_logo.png"
+                    class="zoom-img" alt="instagram"></a>
+            <a target="_blank" href="https://x.com/"><img src="/img/icons/x logo.png" class="zoom-img"
+                    alt="twitter"></a>
+
+        </div>
+    </footer>
+</body>
+
+<!-- <section>
+        <input type="text" id="textinput">
+        <input type="text" id="textinput2">
+        <input type="text" id="result">
+        <button onclick="myFunction()">click me to multi</button>
+    </section>
+    <script>
+
+        function myFunction() {
+            var result = document.getElementById("result");
+            result.value = Number(document.getElementById("textinput").value) * Number(document.getElementById("textinput2").value);
+        }
+    </script> -->
+
+</html>
