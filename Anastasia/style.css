@@ -73,19 +73,26 @@ header {
 }
 
 /* Sektion mein Rezept */
+.img-section {
+    padding-bottom: 50px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 110px;
+}
 
 .img-section img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 5px;    
+    border-radius: 5px;
 }
+
 .preparation {
     display: flex;
     gap: 20px;
     margin-top: 20px;
     padding-bottom: 20px;
 }
+
 .prep-time {
     background-image: url(/img/icons/clock-regular.svg);
     background-color: #efefef;
@@ -98,7 +105,8 @@ header {
     padding-left: 25px;
     padding-right: 10px;
 }
-.kcal{
+
+.kcal {
     background-image: url(/img/icons/brain-solid.svg);
     background-color: #efefef;
     border-radius: 5px;
@@ -110,6 +118,7 @@ header {
     padding-left: 25px;
     padding-right: 10px;
 }
+
 .date {
     background-image: url(/img/icons/calendar-alt-regular.svg);
     background-color: #efefef;
@@ -121,4 +130,22 @@ header {
     padding-top: 5px;
     padding-left: 25px;
     padding-right: 10px;
+}
+
+list-ingridients {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.grey {
+    background-color: #efefef;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.white {
+    padding: 18px;
+}
+.container-recipe {
+    padding: 50px;
 }
