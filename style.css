@@ -375,6 +375,41 @@ p {
 
 /*#endregion cooking-tip*/
 
+/* #region footer */
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efefef;
+    height: 100px;
+    margin-top: 80px;
+
+}
+
+.footer-img {
+    width: 250px;
+    height: auto;
+    margin-left: 100px;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-right: 100px;
+
+}
+
+.social-icons a img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* #endregion footer */
+
 /*#region my-recipe*/
 
 .margin-sides {
