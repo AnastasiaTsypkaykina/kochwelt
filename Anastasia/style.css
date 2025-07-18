@@ -30,13 +30,7 @@ header {
     color: #008000;
 }
 
-.burger_line {
-    height: 20px;
-    background-color: black;
-    width: 32px;
-    display: flex;
-    margin-top: 4px;
-}
+
 
 .button {
     border-style: none;
@@ -46,6 +40,8 @@ header {
 
 #menu {
     margin-bottom: 6px;
+    display: flex;
+
 }
 
 
@@ -60,6 +56,10 @@ header {
     #menu {
         display: none;
     }
+    .d_none {
+        display: flex;
+        flex-direction: column;
+    }
 
 
 
@@ -70,6 +70,16 @@ header {
         height: 50px;
         padding-left: 10px;
     }
+
+    .burger_line {
+        height: 4px;
+        background-color: black;
+        width: 32px;
+        display: flex;
+        margin-top: 4px;
+    }
+
+   
 }
 
 /* Sektion mein Rezept */
@@ -146,9 +156,11 @@ list-ingridients {
 .white {
     padding: 18px;
 }
+
 .container-recipe {
     padding: 50px;
 }
+
 .zubereitung-section {
     margin-bottom: 50px;
 }
@@ -165,6 +177,7 @@ list-ingridients {
 .zubereitung-informationen {
     margin-bottom: 30px;
 }
+
 .contact-section {
     padding-top: 24px;
     padding-bottom: 80px;
@@ -190,6 +203,39 @@ list-ingridients {
 
     font-size: 16px;
 }
+
 #ingridients {
     padding: 0;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: grey;
+  height: 100px;
+  margin-top: 80px;
+
+}
+.footer-img {
+  width: 250px;
+  height: auto;
+  margin-left: 100px;
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-right: 100px;
+
+}
+
+.social-icons a img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
 }
