@@ -6,7 +6,7 @@
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
@@ -286,6 +286,9 @@ footer {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
 }
+hr {
+    display: none;
+}
 
 @media (max-width: 915px) {
     footer {
@@ -297,7 +300,9 @@ footer {
     }
 
     .separator {
-        display: none;
+        /* display: none; */
+        width: 140px;
+        height: 1px;
     }
 
     .footer-img {
@@ -312,6 +317,13 @@ footer {
 
     .footer-links {
         margin-top: 10px;
+    }
+    
+    .impressum-link {
+        padding-bottom: 10px;
+    }
+    .datenschutz-link {
+        padding-top: 10px;
     }
 
 
