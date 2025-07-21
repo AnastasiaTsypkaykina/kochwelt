@@ -1,10 +1,14 @@
+.section-header {
+    margin-left: 180px;
+    margin-right: 180px;
+
+}
 .header-container {
     max-width: 1920px;
-    margin: 0 auto;
+    
     padding: 0 20px;
-    padding-left: 180px;
-    padding-right: 180px;
 }
+    
 
 header {
     display: flex;
