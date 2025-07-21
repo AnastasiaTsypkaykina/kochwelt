@@ -26,24 +26,25 @@
                 <a class="navlink" href="xx">Datenschutz</a>
             </nav>
 
-            <button onclick="toggleMenu()" class="hamburger">
+            <button onclick="toggleMenu()" class="hamburger button-d_none">
                 <span class="burger_line"></span>
                 <span class="burger_line"></span>
                 <span class="burger_line"></span>
+                <nav class="menu-vertical d_none" id="burger-menu" onclick="toggleMenu()">
+                    <div class="nav-vertical-menu-container">
+                        <a class="navlink" href="/index.html">Start</a>
+                        <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                        <a class="navlink" href="/contact.html">Kontakt</a>
+                        <a class="navlink" href="xx">Impressum</a>
+                        <a class="navlink" href="xx">Datenschutz</a>
+                    </div>
+                </nav>
             </button>
         </header>
     </section>
 
 
-    <nav class="menu-vertical d_none" id="burger-menu" onclick="toggleMenu()">
-        <div class="nav-vertical-menu-container">
-            <a class="navlink" href="/index.html">Start</a>
-            <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
-            <a class="navlink" href="/contact.html">Kontakt</a>
-            <a class="navlink" href="xx">Impressum</a>
-            <a class="navlink" href="xx">Datenschutz</a>
-        </div>
-    </nav>
+
 
     <section class="section-top-recipes margin-sides">
         <h2>Lust auf was Neues?</h2>

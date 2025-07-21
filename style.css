@@ -27,7 +27,8 @@ header {
 
 .navlink {
     text-decoration: none;
-    margin-left: 16px;
+    margin-left: 8px;
+    padding: 4px;
     color: black;
     font-size: 16px;
 }
@@ -59,6 +60,10 @@ header {
 
 }
 
+.button-d_none {
+    display: none;
+}
+
 
 
 @media (max-width: 1920px) {
@@ -71,6 +76,10 @@ header {
 @media (max-width: 1100px) {
     #menu {
         display: none;
+    }
+
+    .button-d_none {
+        display: flex;
     }
 
     .d_none {
@@ -100,14 +109,16 @@ header {
     }
 
     .menu-vertical {
+        text-align: start;
+        margin-left: -9px;
+        margin-top: 40px;
         z-index: 100;
+        padding-left: 8px;
         padding-top: 10px;
-        right: 83px;
         position: fixed;
         top: inherit;
         background-color: #0080006e;
         display: flex;
-
     }
 
     .d_none {
@@ -125,6 +136,7 @@ header {
         justify-content: flex-start;
     }
 }
+
 @media (max-width: 400px) {
     .logo-img {
         width: 150px;
@@ -716,8 +728,9 @@ tr:nth-child(odd) {
         margin-right: 110px;
 
     }
-    .menu-vertical {
-        right: 83px;
+
+    .hamburger {
+        right: 110px;
     }
 }
 
@@ -734,8 +747,9 @@ tr:nth-child(odd) {
 
 
     }
-    .menu-vertical{
-        right: 83px;
+
+    .hamburger {
+        right: 90px;
     }
 
     .section-recipe-header h1 {
@@ -792,8 +806,13 @@ tr:nth-child(odd) {
         margin-right: 50px;
 
     }
-    .menu-vertical{
-        right: 83px;
+
+    .hamburger {
+        right: 50px;
+    }
+
+    .navlink {
+        font-size: 13px;
     }
 
     .tag {
@@ -804,132 +823,139 @@ tr:nth-child(odd) {
         width: 15px;
         height: 15px;
     }
-}
 
-@media(max-width:545px) {
-
-    .tag {
-        font-size: 10px;
+    .menu-vertical {
+        background-color: #008000ef;
     }
 
-    .tag img {
-        width: 10px;
-        height: 10px;
+    .navlink:hover {
+        color: white;
     }
 
-    .section-recipe-ingredients-pieces input {
-        field-sizing: content;
-        width: 30%;
+    @media(max-width:545px) {
+
+        .tag {
+            font-size: 10px;
+        }
+
+        .tag img {
+            width: 10px;
+            height: 10px;
+        }
+
+        .section-recipe-ingredients-pieces input {
+            field-sizing: content;
+            width: 30%;
+        }
+
+        .section-recipe-ingredients-pieces button {
+            width: 150px;
+        }
+
     }
 
-    .section-recipe-ingredients-pieces button {
-        width: 150px;
+    @media(max-width:385px) {
+
+        .section-recipe-header h1 {
+            padding: 8px;
+        }
+
+        .tag {
+            font-size: 8px;
+        }
+
+        .tag img {
+            width: 8px;
+            height: 8px;
+            padding-right: 4px;
+        }
     }
 
-}
+    @media(max-width:335px) {
+        .tag {
+            font-size: 6px;
+        }
 
-@media(max-width:385px) {
-
-    .section-recipe-header h1 {
-        padding: 8px;
+        .tag img {
+            width: 6px;
+            height: 6px;
+            padding-right: 2px;
+        }
     }
 
-    .tag {
-        font-size: 8px;
+    /*#endregion my-recipe*/
+
+    /*#region contact*/
+
+    .no-margin footer {
+        margin: 0;
     }
 
-    .tag img {
-        width: 8px;
-        height: 8px;
-        padding-right: 4px;
-    }
-}
-
-@media(max-width:335px) {
-    .tag {
-        font-size: 6px;
+    .section-contact {
+        width: 100%;
+        height: 83vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .tag img {
-        width: 6px;
-        height: 6px;
-        padding-right: 2px;
+    .frame-contact {
+        margin-top: 80px;
+        background-color: var(--bg-color);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 500px;
+        height: 650px;
+        border-radius: 8px;
     }
-}
 
-/*#endregion my-recipe*/
+    .field {
+        width: 91%;
+        margin: 24px;
+    }
 
-/*#region contact*/
+    .field input {
+        border-radius: 4px;
+        border-width: 0;
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+    }
 
-.no-margin footer {
-    margin: 0;
-}
+    .msg-field-big {
+        width: 91%;
+        margin: 24px;
+    }
 
-.section-contact {
-    width: 100%;
-    height: 83vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .msg-field-big textarea {
+        border-radius: 4px;
+        border-width: 0;
+        width: 100%;
+        height: 175px;
+        text-align: start;
+        font-size: 18px;
+    }
 
-.frame-contact {
-    margin-top: 80px;
-    background-color: var(--bg-color);
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 500px;
-    height: 650px;
-    border-radius: 8px;
-}
+    .button-align {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
 
-.field {
-    width: 91%;
-    margin: 24px;
-}
+    .frame-contact button {
+        width: 160px;
+        height: 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-weight: 300;
+    }
 
-.field input {
-    border-radius: 4px;
-    border-width: 0;
-    width: 100%;
-    height: 40px;
-    font-size: 18px;
-}
-
-.msg-field-big {
-    width: 91%;
-    margin: 24px;
-}
-
-.msg-field-big textarea {
-    border-radius: 4px;
-    border-width: 0;
-    width: 100%;
-    height: 175px;
-    text-align: start;
-    font-size: 18px;
-}
-
-.button-align {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.frame-contact button {
-    width: 160px;
-    height: 2px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    font-weight: 300;
-}
-
-/*#endregion contact*/
+    /*#endregion contact*/
