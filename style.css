@@ -37,8 +37,8 @@ header {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
-    text-decoration-color: #ffffff;
-    color: #ffffff;
+    text-decoration-color: var(--btn-color);
+    color: var(--btn-color);
 }
 
 .button {
@@ -126,6 +126,8 @@ header {
     }
 
     .navlink:hover {
+        text-decoration: underline;
+        color: #ffffff;
         text-decoration-thickness: 2px;
         text-underline-offset: 3px;
     }
