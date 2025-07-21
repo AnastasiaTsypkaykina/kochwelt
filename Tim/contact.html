@@ -4,11 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/standard.css">
     <title>Kochwelt - Kontakt</title>
 </head>
 
 <body>
+    <header class="header-container">
+        <a href="/index.html">
+            <img src="/img/logo.png" class="logo-img" alt="logo">
+        </a>
+        <nav class="d_none" id="menu" onclick="toggleMenu()">
+            <a class="navlink" href="/index.html">Start</a>
+            <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+            <a class="navlink" href="xx">Kontakt</a>
+            <a class="navlink" href="xx">Impressum</a>
+        </nav>
 
+        <button onclick="toggleMenu()" class="hamburger">
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+            <span class="burger_line"></span>
+        </button>
+    </header>
+
+    <section class="section-contact">
+        <div class="frame-contact">
+            <h2>Kontaktiere uns</h2>
+            <div class="field">
+                <p>Dein Name:</p>
+                <input type="text">
+            </div>
+            <div class="field">
+                <p>Deine E-Mail:</p>
+                <input type="text">
+            </div>
+            <div class="msg-field-big">
+                <p>Deine Nachricht:</p>
+                <textarea name="contact-textarea" id="area"></textarea>
+            </div>
+            <div class="button-align">
+                <button>Abschicken</button>
+            </div>
+        </div>
+    </section>
+    <div class="no-margin">
+
+        <footer class="footer container wrap">
+            <img class="footer-img" src="/img/logo.png" alt="logo">
+            <div class="social-icons">
+                <a target="_blank" href="http://google.de"><img src="/img/icons/facebook_logo.png" class="zoom-img"
+                        alt="facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img src="/img/icons/instagrram_logo.png"
+                        class="zoom-img" alt="instagram"></a>
+                <a target="_blank" href="https://x.com/"><img src="/img/icons/x logo.png" class="zoom-img"
+                        alt="twitter"></a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
