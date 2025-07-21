@@ -37,8 +37,8 @@ header {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
-    text-decoration-color: #008000;
-    color: #008000;
+    text-decoration-color: #ffffff;
+    color: #ffffff;
 }
 
 .button {
@@ -117,7 +117,7 @@ header {
         padding-top: 10px;
         position: fixed;
         top: inherit;
-        background-color: #0080006e;
+        background-color: #008000ef;
         display: flex;
     }
 
@@ -829,7 +829,8 @@ tr:nth-child(odd) {
     }
 
     .navlink:hover {
-        color: white;
+        text-decoration: none;
+        color: #ffffff;
     }
 
     @media(max-width:545px) {
