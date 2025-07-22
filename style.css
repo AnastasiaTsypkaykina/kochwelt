@@ -112,7 +112,7 @@ header {
         text-align: start;
         margin-left: -9px;
         margin-top: 40px;
-        z-index: 100;
+        z-index: -1;
         padding-left: 8px;
         padding-top: 10px;
         position: fixed;
@@ -292,6 +292,9 @@ list-ingridients {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 16px;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
 .top-recipe {
@@ -303,7 +306,7 @@ list-ingridients {
 }
 
 .container-top-recipes img {
-    width: 300px;
+    width: 250px;
     aspect-ratio: 1/1;
     display: flex;
     border-radius: 8px;
@@ -334,23 +337,39 @@ p {
     }
 }
 
-@media(max-width:890px) {
+@media(max-width:910px) {
     .section-top-recipes h2 {
         font-size: 20px;
     }
 
     .container-top-recipes img {
-        width: 200px;
+        width: 225px;
     }
 
     p {
-        font-size: 12px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:840px) {
+    .container-top-recipes img {
+        width: 200px;
+    }
+}
+
+@media(max-width:740px) {
+    .container-top-recipes img {
+        width: 175px;
     }
 }
 
 @media(max-width:680px) {
     .container-top-recipes {
         flex-direction: column;
+    }
+
+    .container-top-recipes img {
+        width: 200px;
     }
 
     .top-recipe {
@@ -377,6 +396,8 @@ p {
 .container-cooking-tip {
     display: flex;
     justify-content: space-between;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
 .container-cooking-tip img {
@@ -520,6 +541,8 @@ hr {
         justify-content: center;
         align-items: center;
         height: 200px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .separator {
@@ -581,13 +604,14 @@ hr {
 
 #image-cover img {
     width: 100%;
+    border-radius: 8px;
 }
 
 .tag {
     border-radius: 8px;
     background-color: var(--bg-color-recipes);
     padding: 8px;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     align-items: start;
 }
@@ -659,6 +683,7 @@ hr {
 .section-data-ingredients td {
     border-collapse: unset;
     padding: 8px;
+    font-size: 16px;
 }
 
 tr:nth-child(odd) {
@@ -723,6 +748,16 @@ tr:nth-child(odd) {
 
     }
 
+    .container-top-recipes {
+        margin-left: 110px;
+        margin-right: 110px;
+    }
+
+    .container-cooking-tip {
+        margin-left: 110px;
+        margin-right: 110px;
+    }
+
     header {
 
         margin-left: 110px;
@@ -740,6 +775,17 @@ tr:nth-child(odd) {
         margin-left: 90px;
         margin-right: 90px;
     }
+
+    .container-top-recipes {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+    .container-cooking-tip {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
 
     header {
 
@@ -801,6 +847,17 @@ tr:nth-child(odd) {
         margin-right: 50px;
     }
 
+    .container-top-recipes {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .container-cooking-tip {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+
     header {
 
         margin-left: 50px;
@@ -837,14 +894,16 @@ tr:nth-child(odd) {
 
 @media(max-width:545px) {
 
-    .tag {
-        font-size: 10px;
+    .recipe-header-lower-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 
-    .tag img {
-        width: 10px;
-        height: 10px;
+    .flip-direction {
+        flex-direction: column;
     }
+
 
     .section-recipe-ingredients-pieces input {
         field-sizing: content;
@@ -861,28 +920,6 @@ tr:nth-child(odd) {
 
     .section-recipe-header h1 {
         padding: 8px;
-    }
-
-    .tag {
-        font-size: 8px;
-    }
-
-    .tag img {
-        width: 8px;
-        height: 8px;
-        padding-right: 4px;
-    }
-}
-
-@media(max-width:335px) {
-    .tag {
-        font-size: 6px;
-    }
-
-    .tag img {
-        width: 6px;
-        height: 6px;
-        padding-right: 2px;
     }
 }
 
@@ -960,6 +997,21 @@ tr:nth-child(odd) {
     border-radius: 8px;
     font-weight: 300;
 }
+
+@media(max-width:600px) {
+
+    .frame-contact {
+        width: 300px;
+    }
+
+    .field {
+        width: 84%;
+    }
+
+    .msg-field-big {
+        width: 84%;
+        margin: 24px;
+    }
 }
 
 /*#endregion contact*/
