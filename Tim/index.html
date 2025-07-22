@@ -6,32 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="/standard.css">
+    <link rel="icon" href="/img/logo_small.png">
+    <script src="/script.js"></script>
     <title>Kochwelt</title>
 </head>
 
 <body>
 
-    <header class="header-container">
-        <a href="/index.html">
-            <img src="/img/logo.png" class="logo-img" alt="logo">
-        </a>
-        <nav class="d_none" id="menu" onclick="toggleMenu()">
-            <a class="navlink" href="/index.html">Start</a>
-            <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
-            <a class="navlink" href="xx">Kontakt</a>
-            <a class="navlink" href="xx">Impressum</a>
-        </nav>
+    <section class="section-header">
+        <header class="header-container">
+            <a href="/index.html">
+                <img src="/img/logo.png" class="logo-img" alt="logo">
+            </a>
+            <nav class="d_none" id="menu">
+                <a class="navlink" href="./index.html">Start</a>
+                <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                <a class="navlink" href="./contact.html">Kontakt</a>
+                <a class="navlink" href="/Tim/impressum.html">Impressum</a>
+                <a class="navlink" href="/Tim/datenschutz.html">Datenschutz</a>
+            </nav>
 
-        <button onclick="toggleMenu()" class="hamburger">
-            <span class="burger_line"></span>
-            <span class="burger_line"></span>
-            <span class="burger_line"></span>
-        </button>
-    </header>
+            <button onclick="toggleMenu()" class="hamburger button-d_none">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <nav class="menu-vertical d_none" id="burger-menu" onclick="toggleMenu()">
+                    <div class="nav-vertical-menu-container">
+                        <a class="navlink" href="./index.html">Start</a>
+                        <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                        <a class="navlink" href="./contact.html">Kontakt</a>
+                        <a class="navlink" href="/Tim/impressum.html">Impressum</a>
+                        <a class="navlink" href="/Tim/datenschutz.html">Datenschutz</a>
+                    </div>
+                </nav>
+            </button>
+        </header>
+    </section>
 
     <section class="section-top-recipes">
         <h2>Lust auf was Neues?</h2>
-        <div class="container-top-recipes">
+        <div class="container-top-recipes margin-sides">
             <a class="top-recipe" href="/Tim/myrecipe.html">
                 <img src="/img/croissant.jpg" alt="">
                 <p>Frische Croissants</p>
@@ -49,7 +63,7 @@
 
     <section class="section-cooking-tip">
         <h2>Pfanne vs. Wok - Was ist besser?</h2>
-        <div class="container-cooking-tip">
+        <div class="container-cooking-tip margin-sides">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et repellendus, culpa, quidem delectus
                 similique hic, adipisci at labore a beatae iusto quaerat. Dolorum assumenda voluptatem laboriosam
                 voluptate ipsum qui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum asperiores
@@ -65,16 +79,28 @@
     </section>
 
 
-    <footer class="footer container wrap">
-        <img class="footer-img" src="/img/logo.png" alt="logo">
-        <div class="social-icons">
-            <a target="_blank" href="http://google.de"><img src="/img/icons/facebook_logo.png" class="zoom-img"
-                    alt="facebook"></a>
-            <a target="_blank" href="https://www.instagram.com/"><img src="/img/icons/instagrram_logo.png"
-                    class="zoom-img" alt="instagram"></a>
-            <a target="_blank" href="https://x.com/"><img src="/img/icons/x logo.png" class="zoom-img"
-                    alt="twitter"></a>
-    </footer>
+    <section class="section-footer">
+        <footer class="footer container wrap">
+            <img class="footer-img" src="/img/logo.png" alt="logo">
+            <div class="impressum-link">
+                <a class="footer-links" href="/Tim/impressum.html">Impressum</a>
+            </div>
+            <div class="separator"></div>
+            <hr class="solid">
+            <div class="datenschutz-link">
+                <a class="footer-links" href="/Tim/datenschutz.html">Datenschutz</a>
+            </div>
+            <div class="social-icons">
+                <a target="_blank" href="http://facebook.de"><img src="/img/icons/facebook_logo.png" class="zoom-img"
+                        alt="facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img src="/img/icons/instagrram_logo.png"
+                        class="zoom-img" alt="instagram"></a>
+                <a target="_blank" href="https://x.com/"><img src="/img/icons/x logo.png" class="zoom-img"
+                        alt="twitter"></a>
+
+            </div>
+        </footer>
+    </section>
     </div>
 </body>
 
