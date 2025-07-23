@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/standard.css">
-    <link rel="icon" href="/img/logo_small.png">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../standard.css">
+    <link rel="icon" href="../img/logo_small.png">
+    <script src="../script.js"></script>
     <title>Kochwelt - Mein Rezept</title>
 </head>
 
 <body>
 
-    <section class="section-header">
+    <section class="section-header padding-sides">
         <header class="header-container">
-            <a href="/index.html">
-                <img src="/img/logo.png" class="logo-img" alt="logo">
+            <a href="../index.html">
+                <img src="../img/logo.png" class="logo-img" alt="logo">
             </a>
             <nav class="d_none" id="menu">
-                <a class="navlink" href="/index.html">Start</a>
-                <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
-                <a class="navlink" href="/contact.html">Kontakt</a>
-                <a class="navlink" href="/impressum.html" target="_blank">Impressum</a>
-                <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
+                <a class="navlink" href="../index.html">Start</a>
+                <a class="navlink" href="../own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                <a class="navlink" href="../contact.html">Kontakt</a>
+                <a class="navlink" href="../impressum.html" target="_blank">Impressum</a>
+                <a class="navlink" href="../datenschutz.html" target="_blank">Datenschutz</a>
             </nav>
 
             <button onclick="toggleMenu()" class="hamburger">
@@ -32,171 +32,109 @@
                 <span class="burger_line"></span>
                 <nav class="menu-vertical d_none" id="burger-menu" onclick="toggleMenu()">
                     <div class="nav-vertical-menu-container">
-                        <a class="navlink" href="/index.html">Start</a>
-                        <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
-                        <a class="navlink" href="/contact.html">Kontakt</a>
-                        <a class="navlink" href="/impressum.html" target="_blank">Impressum</a>
-                        <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
+                        <a class="navlink" href="../index.html">Start</a>
+                        <a class="navlink" href="../own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                        <a class="navlink" href="../contact.html">Kontakt</a>
+                        <a class="navlink" href="../impressum.html" target="_blank">Impressum</a>
+                        <a class="navlink" href="../datenschutz.html" target="_blank">Datenschutz</a>
                     </div>
                 </nav>
             </button>
         </header>
     </section>
 
-    <div class="margin-sides">
-        <section class="section-recipe-header">
-            <h1>Halusky (Kartoffelspätzle)</h1>
-            <div id="image-cover">
-                <img src="/img/traditional-slovak-halusky.jpg" alt="halusky food image">
+    <section class="section-recipe-header padding-sides">
+        <h1>Halusky (Kartoffelspätzle)</h1>
+        <div id="image-cover">
+            <img src="../img/traditional-slovak-halusky.jpg" alt="halusky food image">
+        </div>
+        <div class="recipe-header-lower-content">
+            <div class="tag">
+                <img src="../img/icons/clock-regular.svg" alt="">60 Min.</img>
             </div>
-            <div class="recipe-header-lower-content">
-                <div class="tag">
-                    <img src="/img/icons/clock-regular.svg" alt="">60 Min.</img>
-                </div>
-                <div class="tag">
+            <div class="tag">
 
-                    <img src="/img/icons/brain-solid.svg" alt=""> simpel</img>
-                </div>
-                <div class="tag">
-                    <img src="/img/icons/calendar-alt-regular.svg" alt="">22.07.2025</img>
-                </div>
+                <img src="../img/icons/brain-solid.svg" alt=""> simpel</img>
             </div>
-        </section>
-
-        <section class="section-recipe-ingredients">
-            <div class="section-recipe-ingredients-pieces">
-                Zutaten für&nbsp;<input placeholder="4" id="multiply" type="number">
-                <button onclick="calcPortions()"> Portionen</button>
+            <div class="tag">
+                <img src="../img/icons/calendar-alt-regular.svg" alt="">22.07.2025</img>
             </div>
-            <div class="section-data-ingredients">
-                <div class="liste-div">
+        </div>
+    </section>
 
-                    <ul id="ingridients" class="liste-ul" style="list-style-type: none;">
-                        <li class="grey"> 8 große Kartoffeln</li>
-                        <li class="white">500 g Mehl</li>
-                        <li class="grey">2 Becher Creme Fraiche</li>
-                        <li class="white">100g Butter</li>
-                        <li class="grey"> Salz und Pfeffer</li>
-                        <li class="white">ein wenig Muskatnuss</li>
-                        <li class="grey">wahlweise Speck (Tipp Butter ersatz)</li>
-                    </ul>
-                </div>
+    <section class="section-recipe-ingredients padding-sides">
+        <div class="section-recipe-ingredients-pieces">
+            Zutaten für&nbsp;<input placeholder="4" id="multiply" type="number">
+            <button onclick="calcPortions()"> Portionen</button>
+        </div>
+        <div class="section-data-ingredients">
+            <div class="liste-div">
 
-                <!--#region old table-->
-                <!-- <table>
-                    <tr class="bg-color-grey">
-                        <td>1</td>
-                        <td>Salatgurke(n)</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Paprikaschot(n), rot und grün</td>
-                    </tr>
-                    <tr class="bg-color-grey">
-                        <td>500</td>
-                        <td>Tomate(n)</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Zwiebel(n)</td>
-                    </tr>
-                    <tr class="bg-color-grey">
-                        <td>200</td>
-                        <td>Schafskäse(n)</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Glas Oliven, schwarze. ca 100g</td>
-                    </tr>
-                    <tr class="bg-color-grey">
-                        <td>etwas</td>
-                        <td>Salz und Pfeffer</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Zitrone(n)</td>
-                    </tr>
-                    <tr class="bg-color-grey">
-                        <td>125</td>
-                        <td>Olivenöl</td>
-                    </tr>
-                    <tr>
-                        <td>nach Bedarf</td>
-                        <td>Oregano</td>
-                    </tr>
-                </table> -->
-                <!--#endregion old table-->
-
+                <ul id="ingridients" class="liste-ul" style="list-style-type: none;">
+                    <li class="grey"> 8 große Kartoffeln</li>
+                    <li class="white">500 g Mehl</li>
+                    <li class="grey">2 Becher Creme Fraiche</li>
+                    <li class="white">100g Butter</li>
+                    <li class="grey"> Salz und Pfeffer</li>
+                    <li class="white">ein wenig Muskatnuss</li>
+                    <li class="grey">wahlweise Speck (Tipp Butter ersatz)</li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section-cooking">
-            <h2>Zubereitung</h2>
-            <div class="flip-direction">
+    <section class="section-cooking padding-sides">
+        <h2>Zubereitung</h2>
+        <div class="flip-direction">
 
-                <div class="tag">
-                    <img src="/img/icons/clock-regular.svg" alt="">ca. 30 Minuten</img>
-                </div>
-                <div class="tag">
-                    <img src="/img/icons/clock-regular.svg" alt="">Gesamtzeit ca. 60 Minuten</img>
-                </div>
+            <div class="tag">
+                <img src="../img/icons/clock-regular.svg" alt="">ca. 30 Minuten</img>
             </div>
-            <p>Die Kartoffeln schälen und roh fein raspeln. Das Mehl dazu geben, der Teig sollte aber noch klebrig sein
-                und mit etwas Salz abschmecken.<br>
-                In einem großen Topf Wasser zum Kochen bringen. Nun den Teig durch einen Spätzlesieb drücken. Wenn die
-                Halušky oben schwimmen, sind sie fertig.<br>
-                Die Butter in einer heißen Pfanne anbraten bis sie braun wird(vorsicht nicht zu heiß STUFE 2 empfohlen).
-                Wenn man die Speckwürfel mag, einfach
-                den ganzen Speck braten und dannach dzu geben. Die Halušky dazu geben und zum Schluss noch den
-                Creme Fraiche in die Pfanne geben. Mit Salz und Pfeffer abschmecken. Muskatnuss nicht vergessen
-            </p>
-            <p>Tipp: Creme Fraiche kann auch durch Sahne ersetzt werden! Manche streuen sich auch geriebenen Käse über
-                ihre Portion.</p>
-            <div class="cooking-creator-frame">
-                <h3>Rezept erstellt von</h3>
-                <div class="cooking-creator">
-                    <img src="/img/profile.png" alt="">
-                    <p>Tim Daubner</p>
-                </div>
+            <div class="tag">
+                <img src="../img/icons/clock-regular.svg" alt="">Gesamtzeit ca. 60 Minuten</img>
             </div>
-        </section>
-    </div>
-    <section class="section-footer">
+        </div>
+        <p>Die Kartoffeln schälen und roh fein raspeln. Das Mehl dazu geben, der Teig sollte aber noch klebrig sein
+            und mit etwas Salz abschmecken.<br>
+            In einem großen Topf Wasser zum Kochen bringen. Nun den Teig durch einen Spätzlesieb drücken. Wenn die
+            Halušky oben schwimmen, sind sie fertig.<br>
+            Die Butter in einer heißen Pfanne anbraten bis sie braun wird(vorsicht nicht zu heiß STUFE 2 empfohlen).
+            Wenn man die Speckwürfel mag, einfach
+            den ganzen Speck braten und dannach dzu geben. Die Halušky dazu geben und zum Schluss noch den
+            Creme Fraiche in die Pfanne geben. Mit Salz und Pfeffer abschmecken. Muskatnuss nicht vergessen
+        </p>
+        <p>Tipp: Creme Fraiche kann auch durch Sahne ersetzt werden! Manche streuen sich auch geriebenen Käse über
+            ihre Portion.</p>
+        <div class="cooking-creator-frame">
+            <h3>Rezept erstellt von</h3>
+            <div class="cooking-creator">
+                <img src="../img/profile.png" alt="">
+                <p>Tim Daubner</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-footer padding-sides">
         <footer class="footer container wrap">
-            <img class="footer-img" src="/img/logo.png" alt="logo">
+            <img class="footer-img" src="../img/logo.png" alt="logo">
             <div class="impressum-link">
-                <a class="footer-links" href="/impressum.html">Impressum</a>
+                <a class="footer-links" href="../impressum.html">Impressum</a>
             </div>
             <div class="separator"></div>
             <hr class="solid">
             <div class="datenschutz-link">
-                <a class="footer-links" href="/datenschutz.html">Datenschutz</a>
+                <a class="footer-links" href="../datenschutz.html">Datenschutz</a>
             </div>
             <div class="social-icons">
-                <a target="_blank" href="http://facebook.de"><img src="/img/icons/facebook_logo.png" class="zoom-img"
+                <a target="_blank" href="http://facebook.de"><img src="../img/icons/facebook_logo.png" class="zoom-img"
                         alt="facebook"></a>
-                <a target="_blank" href="https://www.instagram.com/"><img src="/img/icons/instagrram_logo.png"
+                <a target="_blank" href="https://www.instagram.com/"><img src="../img/icons/instagrram_logo.png"
                         class="zoom-img" alt="instagram"></a>
-                <a target="_blank" href="https://x.com/"><img src="/img/icons/x logo.png" class="zoom-img"
+                <a target="_blank" href="https://x.com/"><img src="../img/icons/x logo.png" class="zoom-img"
                         alt="twitter"></a>
 
             </div>
         </footer>
     </section>
 </body>
-
-<!-- <section>
-        <input type="text" id="textinput">
-        <input type="text" id="textinput2">
-        <input type="text" id="result">
-        <button onclick="myFunction()">click me to multi</button>
-    </section>
-    <script>
-
-        function myFunction() {
-            var result = document.getElementById("result");
-            result.value = Number(document.getElementById("textinput").value) * Number(document.getElementById("textinput2").value);
-        }
-    </script> -->
 
 </html>

@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/standard.css">
-    <link rel="icon" href="/img/logo_small.png">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../standard.css">
+    <link rel="icon" href="../img/logo_small.png">
+    <script src="../script.js"></script>
     <title>Kochwelt - Mein Rezept</title>
 </head>
 
 <body>
 
-    <section class="section-header">
+    <section class="section-header padding-sides">
         <header class="header-container">
-            <a href="/index.html">
-                <img src="/img/logo.png" class="logo-img" alt="logo">
+            <a href="../index.html">
+                <img src="../img/logo.png" class="logo-img" alt="logo">
             </a>
             <nav class="d_none" id="menu">
-                <a class="navlink" href="/index.html">Start</a>
-                <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
-                <a class="navlink" href="/contact.html">Kontakt</a>
-                <a class="navlink" href="/impressum.html" target="_blank">Impressum</a>
-                <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
+                <a class="navlink" href="../index.html">Start</a>
+                <a class="navlink" href="../own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                <a class="navlink" href="../contact.html">Kontakt</a>
+                <a class="navlink" href="../impressum.html" target="_blank">Impressum</a>
+                <a class="navlink" href="../datenschutz.html" target="_blank">Datenschutz</a>
             </nav>
 
             <button onclick="toggleMenu()" class="hamburger">
@@ -32,167 +32,108 @@
                 <span class="burger_line"></span>
                 <nav class="menu-vertical d_none" id="burger-menu" onclick="toggleMenu()">
                     <div class="nav-vertical-menu-container">
-                        <a class="navlink" href="/index.html">Start</a>
-                        <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
-                        <a class="navlink" href="/contact.html">Kontakt</a>
-                        <a class="navlink" href="/impressum.html" target="_blank">Impressum</a>
-                        <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
+                        <a class="navlink" href="../index.html">Start</a>
+                        <a class="navlink" href="../own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                        <a class="navlink" href="../contact.html">Kontakt</a>
+                        <a class="navlink" href="../impressum.html" target="_blank">Impressum</a>
+                        <a class="navlink" href="../datenschutz.html" target="_blank">Datenschutz</a>
                     </div>
                 </nav>
             </button>
         </header>
     </section>
 
-    <div class="margin-sides">
-        <section class="section-recipe-header">
-            <h1>Apfelkuchen</h1>
-            <div id="image-cover">
-                <img src="/img/apple-pie-7519981_1280.jpg" alt="apple pie image">
+    <section class="section-recipe-header padding-sides">
+        <h1>Apfelkuchen</h1>
+        <div id="image-cover">
+            <img src="../img/apple-pie-7519981_1280.jpg" alt="apple pie image">
+        </div>
+        <div class="recipe-header-lower-content">
+            <div class="tag">
+                <img src="../img/icons/clock-regular.svg" alt="">60 Min.</img>
             </div>
-            <div class="recipe-header-lower-content">
-                <div class="tag">
-                    <img src="/img/icons/clock-regular.svg" alt="">60 Min.</img>
-                </div>
-                <div class="tag">
+            <div class="tag">
 
-                    <img src="/img/icons/brain-solid.svg" alt=""> simple</img>
-                </div>
-                <div class="tag">
-                    <img src="/img/icons/calendar-alt-regular.svg" alt="">19.07.2025</img>
-                </div>
+                <img src="../img/icons/brain-solid.svg" alt=""> simple</img>
             </div>
-        </section>
+            <div class="tag">
+                <img src="../img/icons/calendar-alt-regular.svg" alt="">19.07.2025</img>
+            </div>
+        </div>
+    </section>
 
-        <section class="section-recipe-ingredients">
-            <div class="section-recipe-ingredients-pieces">
-                Zutaten für&nbsp;<input placeholder="4" id="multiply" type="number">
-                <button onclick="calcPortions()"> Portionen</button>
-            </div>
-            <div class="section-data-ingredients">
-                <div class="liste-div">
+    <section class="section-recipe-ingredients padding-sides">
+        <div class="section-recipe-ingredients-pieces">
+            Zutaten für&nbsp;<input placeholder="4" id="multiply" type="number">
+            <button onclick="calcPortions()"> Portionen</button>
+        </div>
+        <div class="section-data-ingredients">
+            <div class="liste-div">
 
-                    <ul id="ingridients" class="liste-ul" style="list-style-type: none;">
-                        <li class="grey"> 125 g Margarine</li>
-                        <li class="white">125 g Zucker</li>
-                        <li class="grey">3 Eier</li>
-                        <li class="white">1/2 Teelöfel Backpulver</li>
-                        <li class="grey">250 g Mehl</li>
-                        <li class="white">1.5 kg Äpfel</li>
-                    </ul>
-                </div>
-                <!-- <table>
-                    <tr class="bg-color-grey">
-                        <td>1</td>
-                        <td>Salatgurke(n)</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Paprikaschot(n), rot und grün</td>
-                    </tr>
-                    <tr class="bg-color-grey">
-                        <td>500</td>
-                        <td>Tomate(n)</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Zwiebel(n)</td>
-                    </tr>
-                    <tr class="bg-color-grey">
-                        <td>200</td>
-                        <td>Schafskäse(n)</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Glas Oliven, schwarze. ca 100g</td>
-                    </tr>
-                    <tr class="bg-color-grey">
-                        <td>etwas</td>
-                        <td>Salz und Pfeffer</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Zitrone(n)</td>
-                    </tr>
-                    <tr class="bg-color-grey">
-                        <td>125</td>
-                        <td>Olivenöl</td>
-                    </tr>
-                    <tr>
-                        <td>nach Bedarf</td>
-                        <td>Oregano</td>
-                    </tr>
-                </table> -->
+                <ul id="ingridients" class="liste-ul" style="list-style-type: none;">
+                    <li class="grey"> 125 g Margarine</li>
+                    <li class="white">125 g Zucker</li>
+                    <li class="grey">3 Eier</li>
+                    <li class="white">1/2 Teelöfel Backpulver</li>
+                    <li class="grey">250 g Mehl</li>
+                    <li class="white">1.5 kg Äpfel</li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section-cooking">
-            <h2>Zubereitung</h2>
-            <div class="flip-direction">
+    <section class="section-cooking padding-sides">
+        <h2>Zubereitung</h2>
+        <div class="flip-direction">
 
-                <div class="tag">
-                    <img src="/img/icons/clock-regular.svg" alt="">ca. 20 Minuten</img>
-                </div>
-                <div class="tag">
-                    <img src="/img/icons/clock-regular.svg" alt="">Gesamtzeit ca.60 Minuten</img>
-                </div>
+            <div class="tag">
+                <img src="../img/icons/clock-regular.svg" alt="">ca. 20 Minuten</img>
             </div>
-            <p>Margarine oder Butter, Zucker, Eier zusammenmischen. Danach in diese Mischung Backpulver eingeben.
-                In diese Mischung langsam Mehl reinrühren, sodass die Masse sich langsam in ein Rührteig verwandelt.
-                <br><br>
-                Die Äpfel in die Stücke schneiden (je nach Geschmack können es auch grosse sein).<br>
-                Eine Springform mit Butter vorher vorbereiten. Die Äpfel schön in die Form platzieren, in Kreis
-                oder anders, nach Geschmack. <br>
-                Danach den Rührteig in die Springform ausgiessen, sodass alle Apfelstücke bedeckt sind.<br>
-                Im Vorgeheizten Backoffen bei 200 Grad Ober/Unterhitze ca. 50-55 Min backen. Nach 45 Minuten
-                kontrollieren,
-                falls der Kuchen schon braun ist, dann mit Folie abdecken und noch 10 Min in Backoffen lassen.<br>
-                Guten Appetit!
-            </p>
-            <div class="cooking-creator-frame">
-                <h3>Rezept erstellt von</h3>
-                <div class="cooking-creator">
-                    <img src="/img/profile.png" alt="">
-                    <p>Anastasia</p>
-                </div>
+            <div class="tag">
+                <img src="../img/icons/clock-regular.svg" alt="">Gesamtzeit ca.60 Minuten</img>
             </div>
-        </section>
-    </div>
-    <section class="section-footer">
+        </div>
+        <p>Margarine oder Butter, Zucker, Eier zusammenmischen. Danach in diese Mischung Backpulver eingeben.
+            In diese Mischung langsam Mehl reinrühren, sodass die Masse sich langsam in ein Rührteig verwandelt.
+            <br><br>
+            Die Äpfel in die Stücke schneiden (je nach Geschmack können es auch grosse sein).<br>
+            Eine Springform mit Butter vorher vorbereiten. Die Äpfel schön in die Form platzieren, in Kreis
+            oder anders, nach Geschmack. <br>
+            Danach den Rührteig in die Springform ausgiessen, sodass alle Apfelstücke bedeckt sind.<br>
+            Im Vorgeheizten Backoffen bei 200 Grad Ober/Unterhitze ca. 50-55 Min backen. Nach 45 Minuten
+            kontrollieren,
+            falls der Kuchen schon braun ist, dann mit Folie abdecken und noch 10 Min in Backoffen lassen.<br>
+            Guten Appetit!
+        </p>
+        <div class="cooking-creator-frame">
+            <h3>Rezept erstellt von</h3>
+            <div class="cooking-creator">
+                <img src="../img/profile.png" alt="">
+                <p>Anastasia</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-footer padding-sides">
         <footer class="footer container wrap">
-            <img class="footer-img" src="/img/logo.png" alt="logo">
+            <img class="footer-img" src="../img/logo.png" alt="logo">
             <div class="impressum-link">
-                <a class="footer-links" href="/impressum.html" target="_blank">Impressum</a>
+                <a class="footer-links" href="../impressum.html" target="_blank">Impressum</a>
             </div>
             <div class="separator"></div>
             <hr class="solid">
             <div class="datenschutz-link">
-                <a class="footer-links" href="/datenschutz.html" target="_blank">Datenschutz</a>
+                <a class="footer-links" href="../datenschutz.html" target="_blank">Datenschutz</a>
             </div>
             <div class="social-icons">
-                <a target="_blank" href="http://facebook.de"><img src="/img/icons/facebook_logo.png" class="zoom-img"
+                <a target="_blank" href="http://facebook.de"><img src="../img/icons/facebook_logo.png" class="zoom-img"
                         alt="facebook"></a>
-                <a target="_blank" href="https://www.instagram.com/"><img src="/img/icons/instagrram_logo.png"
+                <a target="_blank" href="https://www.instagram.com/"><img src="../img/icons/instagrram_logo.png"
                         class="zoom-img" alt="instagram"></a>
-                <a target="_blank" href="https://x.com/"><img src="/img/icons/x logo.png" class="zoom-img"
+                <a target="_blank" href="https://x.com/"><img src="../img/icons/x logo.png" class="zoom-img"
                         alt="twitter"></a>
-
             </div>
         </footer>
     </section>
 </body>
-
-<!-- <section>
-        <input type="text" id="textinput">
-        <input type="text" id="textinput2">
-        <input type="text" id="result">
-        <button onclick="myFunction()">click me to multi</button>
-    </section>
-    <script>
-
-        function myFunction() {
-            var result = document.getElementById("result");
-            result.value = Number(document.getElementById("textinput").value) * Number(document.getElementById("textinput2").value);
-        }
-    </script> -->
 
 </html>

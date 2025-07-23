@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./standard.css">
     <link rel="icon" href="/img/logo_small.png">
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
     <title>Kochwelt - Kontakt</title>
 </head>
 
@@ -26,43 +26,13 @@
                 <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
             </nav>
 
-            <button onclick="toggleMenu()" class="hamburger">
-                <span class="burger_line"></span>
-                <span class="burger_line"></span>
-                <span class="burger_line"></span>
-                <nav class="menu-vertical d_none" id="burger-menu" onclick="toggleMenu()">
-                    <div class="nav-vertical-menu-container">
-                        <a class="navlink" href="/index.html">Start</a>
-                        <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
-                        <a class="navlink" href="/contact.html">Kontakt</a>
-                        <a class="navlink" href="/impressum.html" target="_blank">Impressum</a>
-                        <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
-                    </div>
-                </nav>
-            </button>
         </header>
     </section>
 
     <section class="section-contact padding-sides">
-        <form onsubmit="sendMail(event)" class="frame-contact">
-            <h2>Kontaktiere uns</h2>
-            <label class="field">
-                <p>Dein Name:</p>
-                <input name="Name" type="text">
-            </label>
-            <label class="field">
-                <p>Deine E-Mail:</p>
-                <input name="Email" type="email">
-            </label>
-            <label class="msg-field-big">
-                <p>Deine Nachricht:</p>
-                <textarea name="Message" id="area" required></textarea>
-            </label>
-            <div class="button-align">
-                <a href="mailto:EMAILADDRESS">
-                    <button type="submit">Abschicken</button>
-                </a>
-            </div>
+        <form class="frame-contact">
+            <h1>Vielen Dank</h1>
+            <h2>E-mail wurde erfolgreich gesendet!</h2>
         </form>
     </section>
 
