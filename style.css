@@ -62,6 +62,7 @@ header {
 
 .menu-vertical {
     display: none;
+    padding-bottom: 10px;
 }
 
 .menu-vertical .navlink:hover::before {
@@ -451,6 +452,7 @@ list-ingridients {
     display: flex;
     border-radius: 8px;
     margin-bottom: 8px;
+    object-fit: cover;
 }
 
 .top-recipe:hover {
@@ -559,6 +561,7 @@ p {
     display: flex;
     border-radius: 8px;
     margin-left: 8px;
+    object-fit: cover;
     /* transition: transform 175ms ease-in; */
 }
 
@@ -635,7 +638,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: #efefef;
-    height: 100px;    
+    height: 100px;
     max-width: 1920px;
     width: 100%;
 }
@@ -753,6 +756,7 @@ hr {
     display: flex;
     justify-content: center;
 }
+
 .recipe-header {
     max-width: 1920px;
     width: 100%;
@@ -812,6 +816,7 @@ hr {
     justify-content: center;
     align-items: center;
 }
+
 .recipe-ingridients {
     max-width: 1920px;
     width: 100%;
@@ -872,8 +877,9 @@ tr:nth-child(odd) {
 .section-cooking {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
+
 .cooking {
     display: flex;
     justify-content: flex-start;
