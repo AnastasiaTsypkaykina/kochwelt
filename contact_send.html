@@ -13,7 +13,7 @@
 
 <body>
 
-    <section class="section-header padding-sides">
+   <section class="section-header padding-sides">
         <header class="header-container">
             <a href="/index.html">
                 <img src="/img/logo.png" class="logo-img" alt="logo">
@@ -26,6 +26,20 @@
                 <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
             </nav>
 
+            <button onclick="toggleMenu()" class="hamburger button-d_none">
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <span class="burger_line"></span>
+                <nav class="menu-vertical d_none" id="burger-menu" onclick="toggleMenu()">
+                    <div class="nav-vertical-menu-container">
+                        <a class="navlink" href="/index.html">Start</a>
+                        <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                        <a class="navlink" href="/contact.html">Kontakt</a>
+                        <a class="navlink" href="/impressum.html" target="_blank">Impressum</a>
+                        <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
+                    </div>
+                </nav>
+            </button>
         </header>
     </section>
 
@@ -36,7 +50,7 @@
         </form>
     </section>
 
-    <section class="section-footer padding-sides">
+     <section class="section-footer padding-sides">
         <footer class="footer container wrap">
             <img class="footer-img" src="/img/logo.png" alt="logo">
             <div class="impressum-link">

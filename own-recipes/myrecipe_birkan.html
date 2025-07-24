@@ -15,28 +15,28 @@
 
     <section class="section-header padding-sides">
         <header class="header-container">
-            <a href="../index.html">
-                <img src="../img/logo.png" class="logo-img" alt="logo">
+            <a href="/index.html">
+                <img src="/img/logo.png" class="logo-img" alt="logo">
             </a>
             <nav class="d_none" id="menu">
-                <a class="navlink" href="../index.html">Start</a>
-                <a class="navlink" href="../own-recipes/myrecipe_tim.html">Rezept des Tages</a>
-                <a class="navlink" href="../contact.html">Kontakt</a>
-                <a class="navlink" href="../impressum.html" target="_blank">Impressum</a>
-                <a class="navlink" href="../datenschutz.html" target="_blank">Datenschutz</a>
+                <a class="navlink" href="/index.html">Start</a>
+                <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                <a class="navlink" href="/contact.html">Kontakt</a>
+                <a class="navlink" href="/impressum.html" target="_blank">Impressum</a>
+                <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
             </nav>
 
-            <button onclick="toggleMenu()" class="hamburger">
+            <button onclick="toggleMenu()" class="hamburger button-d_none">
                 <span class="burger_line"></span>
                 <span class="burger_line"></span>
                 <span class="burger_line"></span>
                 <nav class="menu-vertical d_none" id="burger-menu" onclick="toggleMenu()">
                     <div class="nav-vertical-menu-container">
-                        <a class="navlink" href="../index.html">Start</a>
-                        <a class="navlink" href="../own-recipes/myrecipe_tim.html">Rezept des Tages</a>
-                        <a class="navlink" href="../contact.html">Kontakt</a>
-                        <a class="navlink" href="../impressum.html" target="_blank">Impressum</a>
-                        <a class="navlink" href="../datenschutz.html" target="_blank">Datenschutz</a>
+                        <a class="navlink" href="/index.html">Start</a>
+                        <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                        <a class="navlink" href="/contact.html">Kontakt</a>
+                        <a class="navlink" href="/impressum.html" target="_blank">Impressum</a>
+                        <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
                     </div>
                 </nav>
             </button>
@@ -45,104 +45,110 @@
 
 
     <section class="section-recipe-header padding-sides">
-        <h1>Quesadillas Chicken</h1>
-        <div id="image-cover">
-            <img src="../img/quesadilla_1280.jpg" alt="quesadilla chicken image">
-        </div>
-        <div class="recipe-header-lower-content">
-            <div class="tag">
-                <img src="../img/icons/clock-regular.svg" alt="">45 Min.</img>
+        <div class="recipe-header">
+            <h1>Quesadillas Chicken</h1>
+            <div id="image-cover">
+                <img src="../img/quesadilla_1280.jpg" alt="quesadilla chicken image">
             </div>
-            <div class="tag">
+            <div class="recipe-header-lower-content">
+                <div class="tag">
+                    <img src="../img/icons/clock-regular.svg" alt="">45 Min.</img>
+                </div>
+                <div class="tag">
 
-                <img src="../img/icons/brain-solid.svg" alt=""> simpel</img>
-            </div>
-            <div class="tag">
-                <img src="../img/icons/calendar-alt-regular.svg" alt="">22.07.2025</img>
+                    <img src="../img/icons/brain-solid.svg" alt=""> simpel</img>
+                </div>
+                <div class="tag">
+                    <img src="../img/icons/calendar-alt-regular.svg" alt="">22.07.2025</img>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="section-recipe-ingredients padding-sides">
-        <div class="section-recipe-ingredients-pieces">
-            Zutaten für&nbsp;<input placeholder="4" id="multiply" type="number">
-            <button onclick="calcPortions()"> Portionen</button>
-        </div>
-        <div class="section-data-ingredients">
-            <div class="liste-div">
+        <div class="recipe-ingridients">
+            <div class="section-recipe-ingredients-pieces">
+                Zutaten für&nbsp;<input placeholder="4" id="multiply" type="number" min="1">
+                <button onclick="calcPortions()"> Portionen</button>
+            </div>
+            <div class="section-data-ingredients">
+                <div class="liste-div">
 
-                <ul id="ingridients" class="liste-ul" style="list-style-type: none;">
-                    <li class="grey"> 400 g Hähnchenbrustfilet(s)</li>
-                    <li class="white">1 TL Kreuzkümmelpulver</li>
-                    <li class="grey">2 TL Salz</li>
-                    <li class="white">½ TL Pfeffer</li>
-                    <li class="grey">1 EL Paprikapulver</li>
-                    <li class="white">3 EL Öl</li>
+                    <ul id="ingridients" class="liste-ul" style="list-style-type: none;">
+                        <li class="grey"> 400 g Hähnchenbrustfilet(s)</li>
+                        <li class="white">1 TL Kreuzkümmelpulver</li>
+                        <li class="grey">2 TL Salz</li>
+                        <li class="white">½ TL Pfeffer</li>
+                        <li class="grey">1 EL Paprikapulver</li>
+                        <li class="white">3 EL Öl</li>
 
-                    <li class="grey">2 Paprikaschote(n), rote und grün</li>
-                    <li class="white">1 Zwiebel(n), rote</li>
-                    <li class="grey">1 Knoblauchzehe(n)</li>
-                    <li class="white">1 Limette(n), Saft davon</li>
-                    <li class="grey">200 g Käse, geriebener</li>
-                    <li class="white">6 Weizentortilla(s)</li>
-                    <li class="grey">2 EL Butter, geschmolzen</li>
-                </ul>
+                        <li class="grey">2 Paprikaschote(n), rote und grün</li>
+                        <li class="white">1 Zwiebel(n), rote</li>
+                        <li class="grey">1 Knoblauchzehe(n)</li>
+                        <li class="white">1 Limette(n), Saft davon</li>
+                        <li class="grey">200 g Käse, geriebener</li>
+                        <li class="white">6 Weizentortilla(s)</li>
+                        <li class="grey">2 EL Butter, geschmolzen</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="section-cooking padding-sides">
-        <h2>Zubereitung</h2>
-        <div class="flip-direction">
+        <div class="cooking">
+            <h2>Zubereitung</h2>
+            <div class="flip-direction">
 
-            <div class="tag">
-                <img src="../img/icons/clock-regular.svg" alt="">ca. 20 Minuten</img>
+                <div class="tag">
+                    <img src="../img/icons/clock-regular.svg" alt="">ca. 20 Minuten</img>
+                </div>
+                <div class="tag">
+                    <img src="../img/icons/clock-regular.svg" alt="">Gesamtzeit ca.45 Minuten</img>
+                </div>
             </div>
-            <div class="tag">
-                <img src="../img/icons/clock-regular.svg" alt="">Gesamtzeit ca.45 Minuten</img>
-            </div>
-        </div>
-        <p>Das Hähnchenfleisch klein würfeln, mit Kreuzkümmel, Paprikapulver, Salz und Pfeffer würzen und
-            vermischen.
+            <p>Das Hähnchenfleisch klein würfeln, mit Kreuzkümmel, Paprikapulver, Salz und Pfeffer würzen und
+                vermischen.
 
-            <br><br>
-            Paprikaschoten und Zwiebel ebenfalls fein würfeln und die Knoblauchzehe fein reiben.<br>
-            In einer beschichteten Pfanne 2 EL Öl erhitzen und das Hähnchenfleisch unter Rühren braten und
-            anschließend in eine Schüssel geben. In derselben Pfanne 1 EL Öl erhitzen und Paprika, Zwiebel und
-            Knoblauchzehe andünsten. Gemüse herausnehmen und zum Hähnchenfleisch geben. Limettensaft dazugeben und
-            verrühren.<br><br>
-            Eine Hälfte der Tortillas mit geschmolzener Butter bestreichen. Die Fleischpfanne kurz auswischen und
-            erhitzen. Eine Tortilla in die Pfanne geben (mit Butter bestrichene Seite sollte unten sein).
-            Fleisch-Gemüse-Mischung auf der Hälfte verteilen und Käse darüberstreuen. Andere Tortillahälfte darüber
-            klappen. Von beiden Seiten knusprig braten.<br><br>
-            Mit Guacamole servieren
-        </p>
-        <div class="cooking-creator-frame">
-            <h3>Rezept erstellt von</h3>
-            <div class="cooking-creator">
-                <img src="../img/birkan.jpg" alt="">
-                <p>Birkan</p>
+                <br><br>
+                Paprikaschoten und Zwiebel ebenfalls fein würfeln und die Knoblauchzehe fein reiben.<br>
+                In einer beschichteten Pfanne 2 EL Öl erhitzen und das Hähnchenfleisch unter Rühren braten und
+                anschließend in eine Schüssel geben. In derselben Pfanne 1 EL Öl erhitzen und Paprika, Zwiebel und
+                Knoblauchzehe andünsten. Gemüse herausnehmen und zum Hähnchenfleisch geben. Limettensaft dazugeben und
+                verrühren.<br><br>
+                Eine Hälfte der Tortillas mit geschmolzener Butter bestreichen. Die Fleischpfanne kurz auswischen und
+                erhitzen. Eine Tortilla in die Pfanne geben (mit Butter bestrichene Seite sollte unten sein).
+                Fleisch-Gemüse-Mischung auf der Hälfte verteilen und Käse darüberstreuen. Andere Tortillahälfte darüber
+                klappen. Von beiden Seiten knusprig braten.<br><br>
+                Mit Guacamole servieren
+            </p>
+            <div class="cooking-creator-frame">
+                <h3>Rezept erstellt von</h3>
+                <div class="cooking-creator">
+                    <img src="../img/birkan.jpg" alt="">
+                    <p>Birkan</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="section-footer padding-sides">
         <footer class="footer container wrap">
-            <img class="footer-img" src="../img/logo.png" alt="logo">
+            <img class="footer-img" src="/img/logo.png" alt="logo">
             <div class="impressum-link">
-                <a class="footer-links" href="../impressum.html" target="_blank">Impressum</a>
+                <a class="footer-links" href="/impressum.html" target="_blank">Impressum</a>
             </div>
             <div class="separator"></div>
             <hr class="solid">
             <div class="datenschutz-link">
-                <a class="footer-links" href="../datenschutz.html" target="_blank">Datenschutz</a>
+                <a class="footer-links" href="/datenschutz.html" target="_blank">Datenschutz</a>
             </div>
             <div class="social-icons">
-                <a target="_blank" href="http://facebook.de"><img src="../img/icons/facebook_logo.png" class="zoom-img"
+                <a target="_blank" href="http://facebook.de"><img src="/img/icons/facebook_logo.png" class="zoom-img"
                         alt="facebook"></a>
-                <a target="_blank" href="https://www.instagram.com/"><img src="../img/icons/instagrram_logo.png"
+                <a target="_blank" href="https://www.instagram.com/"><img src="/img/icons/instagrram_logo.png"
                         class="zoom-img" alt="instagram"></a>
-                <a target="_blank" href="https://x.com/"><img src="../img/icons/x logo.png" class="zoom-img"
+                <a target="_blank" href="https://x.com/"><img src="/img/icons/x logo.png" class="zoom-img"
                         alt="twitter"></a>
 
             </div>

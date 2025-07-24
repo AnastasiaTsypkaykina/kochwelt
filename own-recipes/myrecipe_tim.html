@@ -15,28 +15,28 @@
 
     <section class="section-header padding-sides">
         <header class="header-container">
-            <a href="../index.html">
-                <img src="../img/logo.png" class="logo-img" alt="logo">
+            <a href="/index.html">
+                <img src="/img/logo.png" class="logo-img" alt="logo">
             </a>
             <nav class="d_none" id="menu">
-                <a class="navlink" href="../index.html">Start</a>
-                <a class="navlink" href="../own-recipes/myrecipe_tim.html">Rezept des Tages</a>
-                <a class="navlink" href="../contact.html">Kontakt</a>
-                <a class="navlink" href="../impressum.html" target="_blank">Impressum</a>
-                <a class="navlink" href="../datenschutz.html" target="_blank">Datenschutz</a>
+                <a class="navlink" href="/index.html">Start</a>
+                <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                <a class="navlink" href="/contact.html">Kontakt</a>
+                <a class="navlink" href="/impressum.html" target="_blank">Impressum</a>
+                <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
             </nav>
 
-            <button onclick="toggleMenu()" class="hamburger">
+            <button onclick="toggleMenu()" class="hamburger button-d_none">
                 <span class="burger_line"></span>
                 <span class="burger_line"></span>
                 <span class="burger_line"></span>
                 <nav class="menu-vertical d_none" id="burger-menu" onclick="toggleMenu()">
                     <div class="nav-vertical-menu-container">
-                        <a class="navlink" href="../index.html">Start</a>
-                        <a class="navlink" href="../own-recipes/myrecipe_tim.html">Rezept des Tages</a>
-                        <a class="navlink" href="../contact.html">Kontakt</a>
-                        <a class="navlink" href="../impressum.html" target="_blank">Impressum</a>
-                        <a class="navlink" href="../datenschutz.html" target="_blank">Datenschutz</a>
+                        <a class="navlink" href="/index.html">Start</a>
+                        <a class="navlink" href="/own-recipes/myrecipe_tim.html">Rezept des Tages</a>
+                        <a class="navlink" href="/contact.html">Kontakt</a>
+                        <a class="navlink" href="/impressum.html" target="_blank">Impressum</a>
+                        <a class="navlink" href="/datenschutz.html" target="_blank">Datenschutz</a>
                     </div>
                 </nav>
             </button>
@@ -44,92 +44,98 @@
     </section>
 
     <section class="section-recipe-header padding-sides">
-        <h1>Halusky (Kartoffelspätzle)</h1>
-        <div id="image-cover">
-            <img src="../img/traditional-slovak-halusky.jpg" alt="halusky food image">
-        </div>
-        <div class="recipe-header-lower-content">
-            <div class="tag">
-                <img src="../img/icons/clock-regular.svg" alt="">60 Min.</img>
+        <div class="recipe-header">
+            <h1>Halusky (Kartoffelspätzle)</h1>
+            <div id="image-cover">
+                <img src="../img/traditional-slovak-halusky.jpg" alt="halusky food image">
             </div>
-            <div class="tag">
+            <div class="recipe-header-lower-content">
+                <div class="tag">
+                    <img src="../img/icons/clock-regular.svg" alt="">60 Min.</img>
+                </div>
+                <div class="tag">
 
-                <img src="../img/icons/brain-solid.svg" alt=""> simpel</img>
-            </div>
-            <div class="tag">
-                <img src="../img/icons/calendar-alt-regular.svg" alt="">22.07.2025</img>
+                    <img src="../img/icons/brain-solid.svg" alt=""> simpel</img>
+                </div>
+                <div class="tag">
+                    <img src="../img/icons/calendar-alt-regular.svg" alt="">22.07.2025</img>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="section-recipe-ingredients padding-sides">
-        <div class="section-recipe-ingredients-pieces">
-            Zutaten für&nbsp;<input placeholder="4" id="multiply" type="number">
-            <button onclick="calcPortions()"> Portionen</button>
-        </div>
-        <div class="section-data-ingredients">
-            <div class="liste-div">
+        <div class="recipe-ingridients">
+            <div class="section-recipe-ingredients-pieces">
+                Zutaten für&nbsp;<input placeholder="4" id="multiply" type="number" min="1"> 
+                <button onclick="calcPortions()"> Portionen</button>
+            </div>
+            <div class="section-data-ingredients">
+                <div class="liste-div">
 
-                <ul id="ingridients" class="liste-ul" style="list-style-type: none;">
-                    <li class="grey"> 8 große Kartoffeln</li>
-                    <li class="white">500 g Mehl</li>
-                    <li class="grey">2 Becher Creme Fraiche</li>
-                    <li class="white">100g Butter</li>
-                    <li class="grey"> Salz und Pfeffer</li>
-                    <li class="white">ein wenig Muskatnuss</li>
-                    <li class="grey">wahlweise Speck (Tipp Butter ersatz)</li>
-                </ul>
+                    <ul id="ingridients" class="liste-ul" style="list-style-type: none;">
+                        <li class="grey"> 8 große Kartoffeln</li>
+                        <li class="white">500 g Mehl</li>
+                        <li class="grey">2 Becher Creme Fraiche</li>
+                        <li class="white">100g Butter</li>
+                        <li class="grey"> Salz und Pfeffer</li>
+                        <li class="white">ein wenig Muskatnuss</li>
+                        <li class="grey">wahlweise Speck (Tipp Butter ersatz)</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="section-cooking padding-sides">
-        <h2>Zubereitung</h2>
-        <div class="flip-direction">
+        <div class="cooking">
+            <h2>Zubereitung</h2>
+            <div class="flip-direction">
 
-            <div class="tag">
-                <img src="../img/icons/clock-regular.svg" alt="">ca. 30 Minuten</img>
+                <div class="tag">
+                    <img src="../img/icons/clock-regular.svg" alt="">ca. 30 Minuten</img>
+                </div>
+                <div class="tag">
+                    <img src="../img/icons/clock-regular.svg" alt="">Gesamtzeit ca. 60 Minuten</img>
+                </div>
             </div>
-            <div class="tag">
-                <img src="../img/icons/clock-regular.svg" alt="">Gesamtzeit ca. 60 Minuten</img>
-            </div>
-        </div>
-        <p>Die Kartoffeln schälen und roh fein raspeln. Das Mehl dazu geben, der Teig sollte aber noch klebrig sein
-            und mit etwas Salz abschmecken.<br>
-            In einem großen Topf Wasser zum Kochen bringen. Nun den Teig durch einen Spätzlesieb drücken. Wenn die
-            Halušky oben schwimmen, sind sie fertig.<br>
-            Die Butter in einer heißen Pfanne anbraten bis sie braun wird(vorsicht nicht zu heiß STUFE 2 empfohlen).
-            Wenn man die Speckwürfel mag, einfach
-            den ganzen Speck braten und dannach dzu geben. Die Halušky dazu geben und zum Schluss noch den
-            Creme Fraiche in die Pfanne geben. Mit Salz und Pfeffer abschmecken. Muskatnuss nicht vergessen
-        </p>
-        <p>Tipp: Creme Fraiche kann auch durch Sahne ersetzt werden! Manche streuen sich auch geriebenen Käse über
-            ihre Portion.</p>
-        <div class="cooking-creator-frame">
-            <h3>Rezept erstellt von</h3>
-            <div class="cooking-creator">
-                <img src="../img/profile.png" alt="">
-                <p>Tim Daubner</p>
+            <p>Die Kartoffeln schälen und roh fein raspeln. Das Mehl dazu geben, der Teig sollte aber noch klebrig sein
+                und mit etwas Salz abschmecken.<br>
+                In einem großen Topf Wasser zum Kochen bringen. Nun den Teig durch einen Spätzlesieb drücken. Wenn die
+                Halušky oben schwimmen, sind sie fertig.<br>
+                Die Butter in einer heißen Pfanne anbraten bis sie braun wird(vorsicht nicht zu heiß STUFE 2 empfohlen).
+                Wenn man die Speckwürfel mag, einfach
+                den ganzen Speck braten und dannach dzu geben. Die Halušky dazu geben und zum Schluss noch den
+                Creme Fraiche in die Pfanne geben. Mit Salz und Pfeffer abschmecken. Muskatnuss nicht vergessen
+            </p>
+            <p>Tipp: Creme Fraiche kann auch durch Sahne ersetzt werden! Manche streuen sich auch geriebenen Käse über
+                ihre Portion.</p>
+            <div class="cooking-creator-frame">
+                <h3>Rezept erstellt von</h3>
+                <div class="cooking-creator">
+                    <img src="../img/profile.png" alt="">
+                    <p>Tim Daubner</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="section-footer padding-sides">
         <footer class="footer container wrap">
-            <img class="footer-img" src="../img/logo.png" alt="logo">
+            <img class="footer-img" src="/img/logo.png" alt="logo">
             <div class="impressum-link">
-                <a class="footer-links" href="../impressum.html">Impressum</a>
+                <a class="footer-links" href="/impressum.html" target="_blank">Impressum</a>
             </div>
             <div class="separator"></div>
             <hr class="solid">
             <div class="datenschutz-link">
-                <a class="footer-links" href="../datenschutz.html">Datenschutz</a>
+                <a class="footer-links" href="/datenschutz.html" target="_blank">Datenschutz</a>
             </div>
             <div class="social-icons">
-                <a target="_blank" href="http://facebook.de"><img src="../img/icons/facebook_logo.png" class="zoom-img"
+                <a target="_blank" href="http://facebook.de"><img src="/img/icons/facebook_logo.png" class="zoom-img"
                         alt="facebook"></a>
-                <a target="_blank" href="https://www.instagram.com/"><img src="../img/icons/instagrram_logo.png"
+                <a target="_blank" href="https://www.instagram.com/"><img src="/img/icons/instagrram_logo.png"
                         class="zoom-img" alt="instagram"></a>
-                <a target="_blank" href="https://x.com/"><img src="../img/icons/x logo.png" class="zoom-img"
+                <a target="_blank" href="https://x.com/"><img src="/img/icons/x logo.png" class="zoom-img"
                         alt="twitter"></a>
 
             </div>
